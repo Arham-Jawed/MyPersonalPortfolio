@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: black;
+}
+#main {
+  position: relative;
+  background-color: black;
+}
+#fixer {
+  height: 100px;
+  width: 100px;
+  border: 2px solid yellowgreen;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  filter: blur(10px);
+  z-index: 9999;
+}
+.home {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+nav {
+  height: 10vh;
+  width: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(42, 41, 40, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: yellowgreen;
+  font-size: 2.5vw;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all ease-in 0.1s;
+}
+nav ul li a:hover {
+  color: white;
+  text-decoration: 1px underline white;
+  font-weight: 700;
+}
+.main-section {
+  height: calc(100vh - 10vh);
+  width: 100%;
+  color: yellowgreen;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6vw;
+}
+.main-section > h1 {
+  font-size: 15vw;
+  letter-spacing: -5px;
+  line-height: 13vw;
+  cursor: default;
+  color: transparent;
+  -webkit-text-stroke: 2px yellowgreen;
+}
+.main-section>h2{
+  font-size: 5vw;
+  letter-spacing: -5px;
+  cursor: default;
+}
+.main-section > p {
+  font-size: 2vw;
+  text-align: center;
+  cursor: default;
+}
+.about {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+  color: white;
+  padding: 0 6vw;
+}
+.about > h1 {
+  font-size: 4vw;
+  color: yellowgreen;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: 2px underline yellowgreen;
+}
+.container-1 {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-1 .left {
+  height: 100%;
+  width: 70%;
+  padding: 1vw 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: yellowgreen;
+}
+.container-1 .left > h1 {
+  font-size: 4vw;
+  margin-bottom: 20px;
+  text-decoration: 2px underline yellowgreen;
+}
+.container-1 .left > h3 {
+  font-size: 1.5vw;
+  line-height: 1.4vw;
+}
+.container-1 .right {
+  height: 100%;
+  width: 30%;
+}
+.container-1 .right > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+}
+.container-2 {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: yellowgreen;
+}
+.container-2 .left {
+  height: 100%;
+  width: 30%;
+}
+.container-2 .left > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+}
+.container-2 .right {
+  height: 100%;
+  width: 70%;
+  padding: 1vw 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.container-2 .right > h1 {
+  font-size: 4vw;
+  margin-bottom: 20px;
+  text-decoration: 2px underline yellowgreen;
+}
+.container-2 .right > h3 {
+  font-size: 1.5vw;
+  line-height: 1.4vw;
+  text-align: end;
+}
+.container-3 {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: yellowgreen;
+}
+.container-3 .left {
+  height: 100%;
+  width: 70%;
+  padding: 1vw 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: yellowgreen;
+}
+.container-3 .left > h1 {
+  font-size: 4vw;
+  margin-bottom: 20px;
+  text-decoration: 2px underline yellowgreen;
+}
+.container-3 .left > h3 {
+  font-size: 1.5vw;
+  line-height: 1.4vw;
+}
+.container-3 .right {
+  height: 100%;
+  width: 30%;
+}
+.container-3 .right > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+}
+.footer{
+  min-height: 30vh;
+  width: 100%;
+  background-color: black;
+  margin-top: 20px;
+  padding: 0 6vw;
+}
+.footer-cont{
+  height: 100%;
+  width: 100%;
+  padding: 2vw 0;
+  border-top: 1px solid yellowgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-cont>h1{
+  font-size: 2vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: yellowgreen;
+}
+.social-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.social-link {
+  margin: 0 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+.social-link:hover a{
+  color: white;
+  text-decoration: 2px underline white;
+}
+.social-link a{
+  text-decoration: none;
+  color: yellowgreen;
+  font-size: 2vw;
+}
+.social-link i{
+  font-size: 2.5vw;
+  color: yellowgreen;
+}
